@@ -1,0 +1,21 @@
+[0.699s] Invoking command in '/home/brains/Desktop/robotic_arm/src/robotic_arm': PYTHONPATH=/home/brains/Desktop/robotic_arm/build/robotic_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_arm build --build-base /home/brains/Desktop/robotic_arm/build/robotic_arm/build install --record /home/brains/Desktop/robotic_arm/build/robotic_arm/install.log --single-version-externally-managed install_data
+[0.934s] running egg_info
+[0.953s] writing ../../build/robotic_arm/robotic_arm.egg-info/PKG-INFO
+[0.953s] writing dependency_links to ../../build/robotic_arm/robotic_arm.egg-info/dependency_links.txt
+[0.954s] writing requirements to ../../build/robotic_arm/robotic_arm.egg-info/requires.txt
+[0.954s] writing top-level names to ../../build/robotic_arm/robotic_arm.egg-info/top_level.txt
+[0.992s] reading manifest file '../../build/robotic_arm/robotic_arm.egg-info/SOURCES.txt'
+[0.992s] adding license file 'LICENSE'
+[0.992s] writing manifest file '../../build/robotic_arm/robotic_arm.egg-info/SOURCES.txt'
+[0.992s] running build
+[0.992s] running build_py
+[0.993s] running install
+[0.998s] running install_lib
+[1.017s] running install_data
+[1.018s] copying urdf/robot_arm_urdf.urdf -> /home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/urdf
+[1.018s] running install_egg_info
+[1.037s] removing '/home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm-0.0.0-py3.12.egg-info' (and everything under it)
+[1.038s] Copying ../../build/robotic_arm/robotic_arm.egg-info to /home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm-0.0.0-py3.12.egg-info
+[1.038s] running install_scripts
+[1.160s] writing list of installed files to '/home/brains/Desktop/robotic_arm/build/robotic_arm/install.log'
+[1.180s] Invoked command in '/home/brains/Desktop/robotic_arm/src/robotic_arm' returned '0': PYTHONPATH=/home/brains/Desktop/robotic_arm/build/robotic_arm/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_arm build --build-base /home/brains/Desktop/robotic_arm/build/robotic_arm/build install --record /home/brains/Desktop/robotic_arm/build/robotic_arm/install.log --single-version-externally-managed install_data
