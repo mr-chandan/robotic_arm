@@ -2,9 +2,13 @@
 /home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm/__pycache__/__init__.cpython-312.pyc
 /home/brains/Desktop/robotic_arm/install/robotic_arm/share/ament_index/resource_index/packages/robotic_arm
 /home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/package.xml
-/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/urdf/robot_arm_urdf.urdf
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/models/ros2_control.xacro
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/models/robot_arm_core.xacro
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/models/robot_arm.urdf.xacro
 /home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/meshes
-/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/launch/display.launch.py
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/launch/rsp.launch.py
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/launch/launch_sim.launch.py
+/home/brains/Desktop/robotic_arm/install/robotic_arm/share/robotic_arm/config/robotic_arm_controllers.yaml
 /home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm-0.0.0-py3.12.egg-info/requires.txt
 /home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm-0.0.0-py3.12.egg-info/dependency_links.txt
 /home/brains/Desktop/robotic_arm/install/robotic_arm/lib/python3.12/site-packages/robotic_arm-0.0.0-py3.12.egg-info/SOURCES.txt
