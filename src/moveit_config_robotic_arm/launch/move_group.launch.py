@@ -20,7 +20,7 @@ def generate_launch_description():
     pkg_moveit_config = FindPackageShare(package=moveit_config_package).find(moveit_config_package)
 
     # Configuration file paths
-    urdf_file_path = 'models/robot.urdf.xacro'
+    urdf_file_path = 'models/robot_arm.urdf.xacro'
     srdf_file_path = 'config/robot.srdf'
     controllers_file_path = 'config/moveit_controllers.yaml'
     joint_limits_file_path = 'config/joint_limits.yaml'
