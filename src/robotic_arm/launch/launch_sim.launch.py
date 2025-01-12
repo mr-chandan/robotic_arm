@@ -63,8 +63,3 @@ def generate_launch_description():
     LaunchDescriptionObject.add_action(arm_controller_spawner)
 
     return LaunchDescriptionObject
-
-
-
-
-

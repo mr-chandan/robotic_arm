@@ -6,7 +6,7 @@
 #include "hardware_interface/types/hardware_interface_type_values.hpp"
 #include "hardware_interface/hardware_info.hpp"
 #include <chrono>
-#include "serial/serial.h"
+#include <serial/serial.h>
 #include <string>
 #include <vector>
 #include <sstream>

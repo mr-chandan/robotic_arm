@@ -1,11 +1,14 @@
 <?xml version="1.0" ?>
  
-<robot xmlns:xacro="http://wiki.ros.org/xacro" name="mycobot_280">
-    <ros2_control name="RobotSystem" type="system">
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robotic_arm">
+    <ros2_control name="robotic_arm" type="system">
         <hardware>
-            <plugin>gz_ros2_control/GazeboSimSystem</plugin>
+            <plugin>robotic_arm_hw/RoboticArmHW</plugin>
+            <param name="device">/dev/ttyUSB0</param>
+            <param name="baud_rate">56700</param>
+            <param name="timeout">10000</param>
+            <parma name="enc_counts_per_rev">750</parma>
         </hardware>
- 
         <joint name="joint_1">
             <command_interface name="position">
                 <param name="min">-2.879793</param>
