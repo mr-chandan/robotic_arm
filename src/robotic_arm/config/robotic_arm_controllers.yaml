@@ -1,0 +1,42 @@
+# Main controller manager configuration
+controller_manager:
+  ros__parameters:
+    # Main control loop update rate in Hz
+    update_rate: 100  
+
+    # Controllers that will be loaded by the controller manager
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+    
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+# Configuration for the arm trajectory controller
+arm_controller:
+  ros__parameters:
+    # List of joints controlled by this controller
+    joints:
+      - joint_1  # Base joint
+      - joint_2  # Shoulder joint
+      - joint_3  # Elbow joint 
+      - joint_4  # Wrist joint
+
+    # Available control interfaces
+    command_interfaces:
+      - position  # Position control mode only
+
+    # Feedback state interfaces
+    state_interfaces:
+      - position  # Current joint positions
+
+    # Controller timing parameters
+    state_publish_rate: 50.0    # Rate at which controller state is published (Hz)
+    action_monitor_rate: 20.0   # Rate at which actions are monitored (Hz)
+
+    # Controller behavior settings
+    open_loop_control: true     # Enable open loop control mode
+    allow_integration_in_goal_trajectory: true  # Allow trajectory integration
+
+# Configuration for joint state publisher
+joint_state_broadcaster:
+  ros__parameters: {}  # Using default parameters
