@@ -1,6 +1,66 @@
 <?xml version="1.0" ?>
  
 <robot xmlns:xacro="http://wiki.ros.org/xacro" name="robotic_arm">
+    <ros2_control name="robotic_arm" type="system">
+        <hardware>
+            <plugin>robotic_arm_hw/RoboticArmHW</plugin>
+            <param name="device">/dev/ttyUSB0</param>
+            <param name="baud_rate">57600</param>
+            <param name="timeout_ms">10000</param>
+            <param name="enc_counts_per_rev">750</param>
+            <param name="joint_1">joint_1</param>
+            <param name="joint_2">joint_2</param>
+            <param name="joint_3">joint_3</param>
+            <param name="joint_4">joint_4</param>
+        </hardware>
+        <joint name="joint_1">
+            <command_interface name="position">
+                <param name="min">-2.879793</param>
+                <param name="max">2.879793</param>
+            </command_interface>
+            <state_interface name="position"/>
+              <state_interface name="velocity"/>
+        </joint>
+ 
+        <joint name="joint_2">
+            <command_interface name="position">
+                <param name="min">-2.879793</param>
+                <param name="max">2.879793</param>
+            </command_interface>
+            <state_interface name="position"/>
+               <state_interface name="velocity"/>
+        </joint>
+ 
+        <joint name="joint_3">
+            <command_interface name="position">
+                <param name="min">-2.879793</param>
+                <param name="max">2.879793</param>
+            </command_interface>
+           <state_interface name="position"/>
+               <state_interface name="velocity"/>
+        </joint>
+ 
+        <joint name="joint_4">
+            <command_interface name="position">
+                <param name="min">-2.879793</param>
+                <param name="max">2.879793</param>
+            </command_interface>
+            <state_interface name="position"/>
+               <state_interface name="velocity"/>
+        </joint>
+    </ros2_control>    
+
+     <gazebo>
+        <plugin filename="gz_ros2_control-system" name="gz_ros2_control::GazeboSimROS2ControlPlugin">
+            <parameters>$(find robotic_arm)/config/robotic_arm_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
+
+</robot>
+
+<!-- <?xml version="1.0" ?>
+ 
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="robotic_arm">
     <ros2_control name="RobotSystem" type="system">
         <hardware>
             <plugin>gz_ros2_control/GazeboSimSystem</plugin>
@@ -45,4 +105,4 @@
         </plugin>
     </gazebo>
 
-</robot>
+</robot> -->
